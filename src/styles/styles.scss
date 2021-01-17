@@ -1,3 +1,113 @@
+// Font
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$font-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+// Colours
+$white: #fff;
+$black: #000;
+$maroon: #83333e;
+$off-white: #f2f4f5;
+
+html,
 body {
-    background: cyan;
+    font-family: $font;
+    font-size: 1rem;
+}
+
+.container {
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+    @media (max-width: 1440px) {
+        width: 1280px;
+        min-width: 1280px;
+    }
+    @media (max-width: 1280px) {
+        width: 976px;
+        min-width: 976px;
+    }
+    @media (max-width: 976px) {
+        width: 768px;
+        min-width: 768px;
+    }
+}
+
+// Header
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(210, 210, 210, 0.5);
+    -webkit-backdrop-filter: blur(6px);
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+}
+.inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+    .logo {
+        a {
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            color: $black;
+        }
+    }
+
+    .navigation {
+        nav {
+            a {
+                margin: 0 0.5rem;
+                text-decoration: none;
+                letter-spacing: 1.75px;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                color: $black;
+                :last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// Homepage
+// Hero
+.hero-container {
+    position: relative;
+    img.hero-image {
+        width: 100%;
+        height: auto;
+        filter: brightness(0.7);
+    }
+    .hero-content-outer {
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $off-white;
+
+        h1 {
+            font-size: 7rem;
+            font-family: $font-serif;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 2rem;
+            span {
+                font-size: 3rem;
+                display: block;
+            }
+        }
+
+        p {
+            max-width: 60%;
+            line-height: 1.4;
+        }
+    }
 }
