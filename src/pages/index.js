@@ -16,14 +16,15 @@ const IndexPage = () => (
             <img className="hero-image" src={hero} alt="hero image"></img>
             <div className="hero-content-outer">
                 <h1>
-                    <span>The</span>Crown Inn<span>Church Enstone</span>
+                    <span>The</span>Restaurant<span>in England</span>
                 </h1>
                 <p>
-                    A hidden gem located in the rural Oxfordshire village of
-                    Church Enstone, the perfect spot for any occasion from a
-                    spontaneous lunch to celebratory dinner, in either our flag
-                    stoned bar area, restaurant, conservatory, or weather
-                    permitting our secluded garden area.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nullam sit amet urna venenatis, viverra tortor eget, hendrerit 
+                    ipsum. Morbi sed consequat nibh, finibus imperdiet risus. 
+                    Donec a tempor quam, eget feugiat nunc. Sed dapibus, massa 
+                    in scelerisque condimentum, felis neque vehicula ante, ut 
+                    incidunt augue augue at augue.
                 </p>
             </div>
         </div>
