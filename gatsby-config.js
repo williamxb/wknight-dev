@@ -1,13 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Odunsi Portfolio Site`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Will Knight`,
+    description: `Portfolio website`,
+    author: `@williamxb`,
   },
   plugins: [
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: "a0ce5b038d84ca557279dccd341f6c",
+        preview: false,
+        disableLiveReload: false,
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
