@@ -11,12 +11,11 @@ $off-white: #f2f4f5;
 html,
 body {
     font-family: $font;
-    font-size: 1rem;
 }
 
 .container {
-    width: 1640px;
-    min-width: 1640px;
+    width: 1280px;
+    min-width: 1280px;
     margin: 0 auto;
     @media (max-width: 1440px) {
         width: 1280px;
@@ -89,7 +88,6 @@ header {
         filter: brightness(0.7);
     }
     .hero-content-outer {
-        width: 75%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -111,6 +109,47 @@ header {
         p {
             max-width: 60%;
             line-height: 1.4;
+        }
+    }
+}
+//Intro Content
+.entry-content-container {
+    h1 {
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 3.5rem;
+        font-family: $font-serif;
+    }
+    h2 {
+        margin-top: 0;
+        text-align: center;
+        font-family: $font-serif;
+    }
+    .menus-container {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        margin-bottom: 3rem;
+        a {
+            color: $off-white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 3rem 5rem;
+            margin: 0 1.5rem;
+            background-color: $maroon;
+            border-radius: 0.25rem;
+            transition: all 150ms;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: all 150ms;
+            }
+        }
+    }
+    .entry-content {
+        @media( min-width: 1399px ) {
+            width: 65%;
+            margin: auto;
         }
     }
 }
